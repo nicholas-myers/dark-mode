@@ -11,12 +11,15 @@ const Navbar = ({ coinData }) => {
   return (
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
-      <nav>
-        {coinData.map((coin) => {
-          return <Link>{coin.id}</Link>;
-        })}
-      </nav>
+      <div className="links">
+          {coinData.map((coin) => {
+            return <Link to={`/${coin.id}`}>
+              {coin.name}
+            </Link>;
+          })}
+      </div>
       <div className="dark-mode__toggle">
+        
         <div
           onClick={toggleMode}
           className={darkMode ? "toggle toggled" : "toggle"}

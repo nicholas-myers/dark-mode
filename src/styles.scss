@@ -132,6 +132,9 @@ table {
 
 * {
   box-sizing: border-box;
+  max-width: 100%;
+  margin:0;
+  padding: 0;
 }
 
 html {
@@ -142,6 +145,8 @@ html {
 
 h1 {
   font-size: 2.4rem;
+  width: 5%;
+  margin-right: 3%;
 }
 
 h2 {
@@ -157,19 +162,21 @@ img {
   width: 100%;
 }
 
-nav {
+
+.links {
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
 }
 
 a {
-  color: white;
   font-size: 2rem;
-  border: 1px solid white;
   padding: 1%;
+  text-decoration: none;
 }
+
+
 
 .flex-spacer {
   width: 100%;
@@ -263,5 +270,10 @@ text-align: left;
   .navbar {
     background-color: #1F2022;
     border: none;
+  }
+
+  a {
+    color: #fff;
+    border: 1px solid #fff;
   }
 }
