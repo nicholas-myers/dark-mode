@@ -157,6 +157,20 @@ img {
   width: 100%;
 }
 
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+}
+
+a {
+  color: white;
+  font-size: 2rem;
+  border: 1px solid white;
+  padding: 1%;
+}
+
 .flex-spacer {
   width: 100%;
 }
